@@ -1,0 +1,4 @@
+I want to add a silly cat (or silly cats) somewhere to the site, i like cats.
+
+Improve CSS responsiveness, find cause of overflow and fix it without just hiding the overflow. 
+Mabye JS for some cool features?
