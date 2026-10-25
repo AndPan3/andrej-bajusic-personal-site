@@ -1,6 +1,6 @@
 body{
-    background-color:#21202e;
-    color:#d2d1e3;
+    background-color:#0a0743;
+    color:#e6e5ff;
     align-items:center;
     text-align: center;
     font-family: "Ubuntu Mono", monospace;
@@ -49,24 +49,28 @@ p{
     line-height:1.5rem;
 }
 .Kompetenzen{
-    border:7px solid #1e1e26;
-    width:30%;
+    border:7px solid #030033;
+    width:33%;
     border-left:0px;
     justify-content:center;
     padding:20px
 }
 .Projekte{
-    border:7px solid #1e1e26;
-    width:30%;
+    border:7px solid #030033;
+    width:33%;
     border-left:0px;
     justify-content:center;
     padding:20px
 }
 .Introduction{
-    border:7px solid #1e1e26;
-    width: 30%;
+    border:7px solid #030033;
+    width: 34%;
     justify-content:center;
     padding:20px;
+}
+.Introduction , .Projekte, .Kompetenzen{
+    background-color:#030033;
+    border-top: 8px solid #02001f;
 }
 .Introduction p, .Projekte p, .Kompetenzen p{
     margin-left:25%;
@@ -96,8 +100,8 @@ p{
     z-index: 7;
 }
 .Fotografie{
-    border:7px solid #1e1e26;
-    margin-top:30vh;
+    border:7px solid #02001f;
+    background-color:#020022;
     width:99%
 }
 .Fotografie p{
@@ -137,7 +141,7 @@ p{
     margin-top:0px;
 }
 .socials a {
-    color: #474661;
+    color: #2f2d6c;
     text-decoration:underline;
     letter-spacing:normal;
     transition: color 0.2s, letter-spacing 0.2s;
@@ -145,13 +149,13 @@ p{
 
 .nojs {
     display: contents;
-    color: #474661;
+    color: #2f2d6c;
     margin-bottom:0px;
     transition:color 0.2s
 }
 .nojs:hover {
     display: contents;
-    color:#21202e;
+    color:#0a0743;
     transition:color 0.2s
 }
 .socials a:hover{
@@ -180,18 +184,19 @@ p{
 @media (prefers-color-scheme: light) {
     body{
     background-color:#d2d1e3;
-    color:#21202e
+    color:#0a0743
 }
 .TextLink{
     text-decoration:underline;
-    color:#21202e;
+    color:#0a0743;
 }
 .Kompetenzen, .Introduction, .Projekte{
-    border:7px solid #c7c5de;
+    border:7px solid #b9b6da;
+    background-color:#b4b0df;
 }
 .Fotografie{
-    border:7px solid #c7c5de;
-    border-top:0px;
+    background-color:#a5a0e2;
+    border:0px;
 }
 .socials a, .nojs {
     color:#21202e;
