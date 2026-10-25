@@ -35,7 +35,10 @@ h2{
 }
     .welcomediv{
     margin-top: 30vh;
-    margin-bottom: 70vh;
+    margin-bottom: 50vh;
+}
+.cat{
+    margin-right:65vw;
 }
 .TextLink{
     text-decoration:underline;
