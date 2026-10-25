@@ -8,6 +8,4 @@
 
 ## FINISHED:
 
-25.Oct 2026
-
-"I want to add a silly cat (or silly cats) somewhere to the site, i like cats."
+25.Oct 2026 "I want to add a silly cat (or silly cats) somewhere to the site, i like cats."
