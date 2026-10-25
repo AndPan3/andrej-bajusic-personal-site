@@ -184,37 +184,6 @@ p{
 .contactform{
     display:inline-block;
 }
-@media (prefers-color-scheme: light) {
-    body{
-    background-color:#d2d1e3;
-    color:#0a0743
-}
-.TextLink{
-    text-decoration:underline;
-    color:#0a0743;
-}
-.Kompetenzen, .Introduction, .Projekte{
-    border:7px solid #b9b6da;
-    background-color:#b4b0df;
-}
-.Fotografie{
-    background-color:#a5a0e2;
-    border:0px;
-}
-.socials a, .nojs {
-    color:#21202e;
-}
-.nojs:hover {
-    color:#d2d1e3;
-}
-.socials a:hover{
-    color:#a70909;}
-
-.dm{
-display:block;
-margin-top:10%;
-}
-}
 @media (max-width:480px){
     .container{
         flex-direction:column;
