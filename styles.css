@@ -340,4 +340,10 @@ p{
         background-color:#d2d0ff;
         border:none;
     }
+    .intro{
+        color:#0a0743;
+    }
+    .intro:hover{
+        color:#02002f;
+    }
 }
