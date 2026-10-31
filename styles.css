@@ -321,6 +321,12 @@ p{
     .TextLink{
         color:#2f2d6c;
     }
+    .socials a:hover{
+        color:#100b74;
+    }
+    .nojs:hover {
+        color:#e6e5ff;
+    }
     p a {
         color:#2f2d6c;
     }
