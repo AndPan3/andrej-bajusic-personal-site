@@ -4,7 +4,6 @@ body{
     align-items:center;
     text-align: center;
     font-family: "Ubuntu Mono", monospace;
-    overflow-x:hidden;
 }
 h1{
     font-size:8vw;
@@ -20,7 +19,7 @@ h2{
     font-family: "Orbitron", sans-serif;
 }
 .dm{
-    display:none;
+    display: none;
 }
 .welcome{
     font-size:3vw;
@@ -90,7 +89,7 @@ p{
     display: inline-block;
     width:30%;
     transform:scale(1);
-    transition:transform 0.1s;
+    transition: transform 0.1s;
     object-fit: cover;
     z-index: 1;
     margin-top:2%;
@@ -99,13 +98,21 @@ p{
 .Fotografie img:hover{
     position: relative;
     transform:scale(1.2);
-    transition:transform 0.1s;
+    transition: transform 0.1s;
     z-index: 7;
 }
 .Fotografie{
-    border:7px solid #02001f;
+    border-bottom:7px solid #02001f;
+    border-top:7px solid #02001f;
+    padding-left:0px;
+    padding-right:0px;
     background-color:#020022;
-    width:99%
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    align-items:center;
+    text-align: center;
+    overflow:hidden;
 }
 .Fotografie p{
     margin-left:25%;
@@ -164,10 +171,8 @@ p{
 .socials a:hover{
     color:#d2d1e3;
     font-weight:bolder;
-    transition: color 0.2s;
-    letter-spacing:0.5em;
-    transition: letter-spacing 0.2s
-}
+    transition: color 0.2s,letter-spacing 0.2s;
+    letter-spacing:0.5em;}
 .intro{
     font-size:large;
     color:#d2d1e3;
@@ -190,19 +195,19 @@ p{
     }
     .Introduction {
         width:99%;
-        padding: none;
-        margin:none;
-        border-right:none;
-        border-left:none;
+        padding: 0px;
+        margin:0px;
+        border-right:0px;
+        border-left:0px;
         overflow: hidden;
     }
         .Projekte {
         width:99%;
-        padding: none;
-        margin:none;
-        border-right:none;
+        padding: 0px;
+        margin:0px;
+        border-right:0px;
         overflow: hidden;
-        border-left:none;
+        border-left:0px;
     }
         .Projekte img{
             overflow:visible;
@@ -210,18 +215,18 @@ p{
         .Kompetenzen {
         width:99%;
         overflow: hidden;
-        padding: none;
-        margin:none;
-        border-right:none;
-        border-left:none;
+        padding: 0px;
+        margin:0px;
+        border-right:0px;
+        border-left:0px;
     }
     .foot{
         flex-direction:column;
     }
     .socials{
         flex-direction: column;
-        gap:none;
-        margin:none;
+        gap:0px;
+        margin:0px;
     }
 }
 @media (max-width:769px){
@@ -230,19 +235,19 @@ p{
     }
         .Introduction {
         width:99%;
-        padding: none;
-        margin:none;
-        border-right:none;
-        border-left:none;
+        padding: 0px;
+        margin:0px;
+        border-right:0px;
+        border-left:0px;
         overflow: hidden;
     }
         .Projekte {
         width:99%;
-        padding: none;
-        margin:none;
-        border-right:none;
+        padding: 0px;
+        margin:0px;
+        border-right:0px;
         overflow: hidden;
-        border-left:none;
+        border-left:0px;
     }
         .Projekte img{
             overflow:visible;
@@ -254,10 +259,10 @@ p{
         .Kompetenzen {
         width:99%;
         overflow: hidden;
-        padding: none;
-        margin:none;
-        border-right:none;
-        border-left:none;
+        padding: 0px;
+        margin:0px;
+        border-right:0px;
+        border-left:0px;
     }
 }
 @media (max-width: 1025px){
@@ -332,13 +337,13 @@ p{
     }
     .Projekte, .Kompetenzen, .Introduction{
         background-color:#dbd9ff;
-        border:none;
+        border:0px;
         margin-bottom:0vh;
     }
     .Fotografie{
         margin-top: 0vh;
         background-color:#d2d0ff;
-        border:none;
+        border:0px;
     }
     .intro{
         color:#0a0743;
