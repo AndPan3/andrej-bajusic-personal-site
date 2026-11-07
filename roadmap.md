@@ -3,10 +3,16 @@
 ## Sorted by priority
 
 1. Fix cat styling
-2: Make contact form better visually, not side by side but over eachother and a border, which gives it an overall more traditional contact form vibe.
-3. Based off of lighthouse report: add a "landmark", compress the images (optional)
-4. Improve CSS responsiveness, find cause of overflow and fix it without just hiding the overflow.
-5. Mabye JS for some cool features?
+2. Based off of lighthouse report: add a "landmark", compress the images (optional)
+3. Improve CSS responsiveness, find cause of overflow and fix it without just hiding the overflow.
+
+## Ideas
+### Not sorted by priority
+Mabye JS for some cool features?
+Make contact form better visually, not side by side but over eachother and a border, which gives it an overall more traditional contact form vibe
+
+#### Background and color scheme
+I am 100% keeping the dark blue color scheme, with this idea i mean to replace the background with a cloud/modern gradient so it does not look so bland like now.
 
 ## Log:
 
