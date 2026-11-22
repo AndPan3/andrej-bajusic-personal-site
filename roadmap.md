@@ -2,9 +2,7 @@
 
 ## Sorted by priority
 
-1. Fix cat styling
-2. Based off of lighthouse report: add a "landmark", compress the images (optional)
-3. Improve CSS responsiveness, find cause of overflow and fix it without just hiding the overflow.
+1.. Based off of lighthouse report: add a "landmark", compress the images (optional)
 
 ## Ideas
 ### Not sorted by priority
@@ -21,3 +19,4 @@ I am 100% keeping the dark blue color scheme, with this idea i mean to replace t
 31.Oct.2026:"1. Add light mode support using @media (old light mode was removed because it was too wonky.)"
 
 25.Oct 2026 "I want to add a silly cat (or silly cats) somewhere to the site, i like cats."
+21 & 22. Nov 2026: Fix cat styling | Improve CSS responsiveness, find cause of overflow and fix it without just hiding the overflow. note: I've redone my whole CSS sooo ya...

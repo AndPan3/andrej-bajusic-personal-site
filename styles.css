@@ -1,354 +1,544 @@
-body{
-    background-color:#0a0743;
-    color:#e6e5ff;
-    align-items:center;
-    text-align: center;
+
+/* Dark mode (default) */
+
+body {
+    background-color: #0a0743;
+    color: #e6e5ff;
     font-family: "Ubuntu Mono", monospace;
 }
-h1{
-    font-size:8vw;
-    letter-spacing:0.05vw;
+
+h1,
+h2,
+h3,
+.welcome,
+.foot,
+.intro {
     font-family: "Orbitron", sans-serif;
-    transition:letter-spacing 0.15s
+        transition:letter-spacing 0.5s;
+
 }
-h1:hover{
-    letter-spacing:0.7vw;
-    transition:letter-spacing 0.15s
+
+.TextLink {
+    color: #d2d1e3;
 }
-h2{
-    font-family: "Orbitron", sans-serif;
+
+.socials a,
+.nojs {
+    color: #4743af;
+        transition:letter-spacing 0.5s;
+
 }
-.dm{
+.nojs{
+    text-align: center;
+    font-size: clamp(0.6dvw,1.1dvw,1.7dvw);
+    transition:color 0.5s;
+}
+.nojs:hover{
+    transition:color 0.5s;
+}
+
+.socials a:hover {
+    color: #d2d1e3;
+    letter-spacing: 0.4dvw;
+        transition:letter-spacing 0.5s;
+
+}
+
+.nojs:hover {
+    color: #0a0743;
+}
+
+.intro,
+.intro:hover {
+    color: #d2d1e3;
+}
+
+.Introduction,
+.Projekte,
+.Kompetenzen {
+    background-color: #030033;
+}
+
+.Fotografie {
+    background-color: #020022;
+}
+
+.Logo {
+    filter: grayscale(1) brightness(1.5);
+}
+
+.Logo:hover {
+    filter: none;
+}
+
+.dm {
     display: none;
 }
+
+h1{
+    margin-top: 30dvh;
+    text-align: center;
+    font-size: 8dvw;
+        margin-bottom: 3dvh;
+}
 .welcome{
-    font-size:3vw;
-    margin-top:-4%;
-    font-family: "Orbitron", sans-serif;
-    letter-spacing:normal;
-    transition:letter-spacing 0.15s
+    text-align: center;
+    font-size: 2dvw;
+    margin-top:0px;
+    margin-bottom: 50dvh;
 }
-.welcome:hover{
-    letter-spacing:0.5vw;
-    transition:letter-spacing 0.15s
+.container{
+    display: flex;
+    text-align: center;
 }
-    .welcomediv{
-    margin-top: 30vh;
-    margin-bottom: 50vh;
+.container img {
+    width: 10%;
 }
-.cat{
-    margin-right:65vw;
+.Kompetenzen, .Introduction {
+    width: 50vw;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border-bottom: #020022 7px solid;
 }
-.TextLink{
-    text-decoration:underline;
-    color:#d2d1e3;
+.Kompetenzen p, .Introduction p{
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
-.TextLink:hover{
-    font-weight:bold;
+.trio, .Fotografie p{
+    font-size: clamp(2vh,3vh,4vh);
 }
-p{
-    letter-spacing: 0.03em;
-    line-height:1.5rem;
-}
-.Kompetenzen{
-    border:7px solid #030033;
-    width:33%;
-    border-left:0px;
-    justify-content:center;
-    padding:20px
+.trio h2, .Fotografie h2{
+    font-size: clamp(4vh,5vh,6vh);
 }
 .Projekte{
-    border:7px solid #030033;
-    width:33%;
-    border-left:0px;
-    justify-content:center;
-    padding:20px
-}
-.Introduction{
-    border:7px solid #030033;
-    width: 34%;
-    justify-content:center;
-    padding:20px;
-}
-.Introduction , .Projekte, .Kompetenzen{
-    background-color:#030033;
-    border-top: 8px solid #02001f;
-}
-.Introduction p, .Projekte p, .Kompetenzen p{
-    margin-left:25%;
-    margin-right:25%;
-}
-.container {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
-    overflow:hidden
-}
-.Fotografie img{
-    aspect-ratio: 1 / 1;
-    display: inline-block;
-    width:30%;
-    transform:scale(1);
-    transition: transform 0.1s;
-    object-fit: cover;
-    z-index: 1;
-    margin-top:2%;
-    position: relative;
-}
-.Fotografie img:hover{
-    position: relative;
-    transform:scale(1.2);
-    transition: transform 0.1s;
-    z-index: 7;
+    text-align: center;
+    width:100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top:3vh;
+    padding-bottom:3vh;
+
 }
 .Fotografie{
-    border-bottom:7px solid #02001f;
-    border-top:7px solid #02001f;
-    padding-left:0px;
-    padding-right:0px;
-    background-color:#020022;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top:3vh;
+    padding-bottom:3vh;
+}
+.Fotografie img{
+    width:25%;
+    
+}
+.clock, .cartons, .db {
+    display:flex;
+    align-items:center;
+    gap:1dvw;
+}
+.clock img, .cartons img, .db img {
+    width:30dvw;
+    height:auto;
+    margin-right: 10dvw;
+    margin-left: 10dvw;
+}
+h3{
+    display: block;
+    text-align: center;
+    padding-top:4dvh;
+    border-top: #09008d3f 5px solid;
+    transition:letter-spacing 0.5s;
+}
+h3:hover,h1:hover, h2:hover,.welcome:hover{
+    letter-spacing: 0.5dvw;
+    transition:letter-spacing 0.5s;
+}
+.clock p, .cartons p, .db p {
+    margin-left:10dvw;
+    margin-right: 10dvw;
+    padding: 2dvw;
+    border-radius: 50px;
+    border:#050052 5px solid;
+    background-color: #09008d85;
+}
+img{
+    transition: box-shadow 0.5s
+}
+img:hover{
+box-shadow: 0 0 1.5dvw #fbff0071;
+transition: box-shadow 0.5s}
+.socials{   
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    gap:1dvw;
+    font-size: clamp(0.5dvw,1dvw,1.5dvw)
+}
+.jazz{
+    background-color: #0a0561;
+    border:#0900b4 7px solid;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.3s;
+}
+.jazz:hover{
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+.jazz img {
+    width:15vw
+}
+.mindjazz {
+    font-family: Orbitron;
+    font-size: clamp(0.7vw,0.9vw,1.1vw);
+    letter-spacing: 0.2vw;
+}
+.we-playin-jazz{
+    background-color: #1e15c4;
+    letter-spacing: 0.2vw;
+    font-family: Orbitron;
+    font-size: clamp(0.7vw,0.9vw,1.1vw);
+    border:#16108d 4px solid;
+    margin-left:15%;
+    margin-right: 15%;
+    padding:10px;
+    border-radius: 20px;
+    transition:all 0.3s;
+    color:#FFF;
+    margin-bottom:10px;
+
+}
+.we-playin-jazz:hover {
+    background-color: #29c415a9;
+    font-weight: bolder;
+    border:#133d0da9 4px solid;
+    transition:all 0.3s;
+}
+.bothcats{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     width: 100%;
+    padding-left:10vw;
+    padding-right:10vw;
+    box-sizing: border-box;
+}
+.bothcats img:hover {
+    box-shadow: none;
+}
+.attr{
+    font-family: orbitron;
+    color:#FFF
+}
+.attr a{
+    color:#ffffff86;
+    font-size:0.6vw;
+    letter-spacing: 0.1vw;
+    font-style: bolder;
+}
+/* PHONE (0–599px) */
+@media screen and (max-width: 599px) {
+.welcome{
+    font-size: 4dvw;
+    margin-bottom:80dvh;
+}
+.bothcats{
+    display: block;
+    align-items: center;
+    width: 100%;
+    padding-left:10vw;
+    padding-right:10vw;
+}
+.clock, .cartons, .db {
+    display:block;
+}
+.container{
+    display: block;
+    text-align: center;
+}
+.Kompetenzen, .Introduction {
+    width: 100%;
+    margin-bottom:5dvh;
+    text-align: center;
+    margin:0%;
+    border-bottom: #020022 7px solid;
+}
+.Kompetenzen p, .Introduction p{
+        margin-left:10dvw;
+    margin-right: 10dvw;
+    padding: 2dvw;
+    border-radius: 50px;
+    border:#050052 5px solid;
+    background-color: #09008d85;
+
+}
+.db img, .clock img, .cartons img{
+    width:70dvw;
+}
+.Fotografie img{
+    width:70dvw;
     margin-left:auto;
     margin-right:auto;
-    align-items:center;
-    text-align: center;
-    overflow:hidden;
+    margin-bottom:5dvh;
+    display: block;
 }
-.Fotografie p{
-    margin-left:25%;
-    margin-right:25%;
+.jazz:hover{
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.jazz img {
+    width:70vw
+}
+.mindjazz {
+    font-family: Orbitron;
+    font-size: clamp(5vw,6vw,7vw);
+    letter-spacing: 0.3vw;
+}
+.we-playin-jazz{
+    background-color: #1e15c4;
+    letter-spacing: 0.3vw;
+    font-family: Orbitron;
+    font-size: clamp(5vw,6vw,7vw);
+    border:#16108d 4px solid;
+    margin-left:15%;
+    margin-right: 15%;
+    padding:10px;
+    border-radius: 20px;
+    transition:all 0.3s;
+    color:#FFF;
+    margin-bottom:10px;
 
 }
-.Fotografie h2{
-    font-size:xx-large;
-    transform:scale(1.1)
+.attr a{
+    font-size: 4vw;
 }
-.Logo {
-    margin-top:5%;
-    margin-right:10%;
-    width:10%;
-    aspect-ratio:1/1;
-    object-fit:cover;
-    filter:grayscale(1) brightness(1.5);
-    transform:scale(1);
-    transition: filter 0.1s, transform 0.1s;
-}
-.Logo:hover{
-    filter:none;
-    transform:scale(3);
-    transition: filter 0.1s, transform 0.1s;
-}
-.foot{
-    margin-top:5%;
-    font-family: "Orbitron", sans-serif;
-    font-size:smaller;
+.nojs{
+    font-size: 3dvh;
 }
 .socials{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    gap:15px;
+    display: block;
+    font-size: 5dvw;
+}}
+
+/* SMALL TABLET (600–767px) */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+.bothcats{
+    display: block;
+    align-items: center;
+    width: 100%;
+    padding-left:10vw;
+    padding-right:10vw;
+}
+.jazz:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.attr a{
+    font-size: 3vw;
+}
+.clock, .cartons, .db {
+    display:block;
+}
+.container{
+    display: block;
+    text-align: center;
+}
+.Kompetenzen, .Introduction {
+    width: 100%;
+    margin-bottom:5dvh;
+    text-align: center;
+    margin:0%;
+    border-bottom: #020022 7px solid;
+}
+.Projekte img{
+    width:60dvw;
+}
+.Kompetenzen p, .Introduction p{
+        margin-left:10dvw;
+    margin-right: 10dvw;
+    padding: 2dvw;
+    border-radius: 50px;
+    border:#050052 5px solid;
+    background-color: #09008d85;
+
+}   
+
+.jazz img {
+    width:70vw
+}
+.mindjazz {
+    font-family: Orbitron;
+    font-size: clamp(5vw,6vw,7vw);
+    letter-spacing: 0.3vw;
+}
+.we-playin-jazz{
+    background-color: #1e15c4;
+    letter-spacing: 0.3vw;
+    font-family: Orbitron;
+    font-size: clamp(5vw,6vw,7vw);
+    border:#16108d 4px solid;
+    margin-left:15%;
+    margin-right: 15%;
+    padding:10px;
+    border-radius: 20px;
+    transition:all 0.3s;
+    color:#FFF;
+    margin-bottom:10px;
+
+}
+
+.socials{
+    display:block;
+    font-size: 3vw;
+}
+.nojs{
+    font-size: 4vw;
+}}
+/* BIG TABLET (768–1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+.bothcats{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding-left:5vw;
+    padding-right:5vw;
+    box-sizing: border-box;
+    gap:20px;
+}
+.jazz:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+.attr a{
+    font-size: 3vw;
+}
+.clock, .cartons, .db {
+    display:block;
+}
+.container{
+    display: block;
+    text-align: center;
+}
+.Kompetenzen, .Introduction {
+    width: 100%;
+    margin-bottom:5dvh;
+    text-align: center;
+    margin:0%;
+    border-bottom: #020022 7px solid;
+}
+.Projekte img{
+    width:60dvw;
+}
+.Kompetenzen p, .Introduction p{
+        margin-left:10dvw;
+    margin-right: 10dvw;
+    padding: 2dvw;
+    border-radius: 50px;
+    border:#050052 5px solid;
+    background-color: #09008d85;
+
+}   
+
+.jazz img {
+    width:30vw
+}
+.mindjazz {
+    font-family: Orbitron;
+    font-size: clamp(5vw,6vw,7vw);
+    letter-spacing: 0.3vw;
+}
+.we-playin-jazz{
+    background-color: #1e15c4;
+    letter-spacing: 0.3vw;
+    font-family: Orbitron;
+    font-size: clamp(5vw,6vw,7vw);
+    border:#16108d 4px solid;
+    margin-left:15%;
+    margin-right: 15%;
+    padding:10px;
+    border-radius: 20px;
+    transition:all 0.3s;
+    color:#FFF;
+    margin-bottom:10px;
+
+}
+
+.socials{
+    display:block;
+    font-size: 3vw;
+}
+.nojs{
+    font-size: 4vw;
+}}
+
+/* LAPTOP (1024–1899px) */
+@media screen and (min-width: 1024px) and (max-width: 1899px) {
+.bothcats{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding-left:5vw;
+    padding-right:5vw;
+    box-sizing: border-box;
+    gap:20px;
+}
+.mindjazz {
+    font-size:3.5vw;
     margin-top:0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
-.socials a {
-    color: #4743af;
-    text-decoration:underline;
-    letter-spacing:normal;
-    transition: color 0.2s, letter-spacing 0.2s;
+.jazz:hover {
+    transform: scale(1.07);
+}
+.we-playin-jazz{
+    font-size: 2.5vw;
+}
+.attr a{
+    font-size: 1.5vw;
+}
+.nojs{
+    font-size:2vw
+}
+.socials a{
+    font-size:1.5vw;
+}
 }
 
-.nojs {
-    display: contents;
-    color: #4743af;
-    margin-bottom:0px;
-    transition:color 0.2s
+/* MONITOR / 4K+ (1900px+) */
+@media screen and (min-width: 1900px) {
+.Fotografie p{
+    margin-left:25vw;
+    margin-right: 25vw;
 }
-.nojs:hover {
-    display: contents;
-    color:#0a0743;
-    transition:color 0.2s
+.db p, .cartons p, .clock p{
+    font-size:2vw
 }
-.socials a:hover{
-    color:#d2d1e3;
-    font-weight:bolder;
-    transition: color 0.2s,letter-spacing 0.2s;
-    letter-spacing:0.5em;}
-.intro{
-    font-size:large;
-    color:#d2d1e3;
-    letter-spacing:normal;
-    transition: letter-spacing 0.2s;
-    font-family: "Orbitron", sans-serif;
+h3{
+    font-size: 3vw;
 }
-.intro:hover{
-    font-size:large;
-    color:#d2d1e3;
-    letter-spacing:0.1em;
-    transition: letter-spacing 0.2s
+.Fotografie h2, .Projekte h2{
+    font-size: 4vw;
 }
-.contactform{
-    display:inline-block;
+.mindjazz {
+    font-size: 3vw;
 }
-@media (max-width:480px){
-    .container{
-        flex-direction:column;
-    }
-    .Introduction {
-        width:99%;
-        padding: 0px;
-        margin:0px;
-        border-right:0px;
-        border-left:0px;
-        overflow: hidden;
-    }
-        .Projekte {
-        width:99%;
-        padding: 0px;
-        margin:0px;
-        border-right:0px;
-        overflow: hidden;
-        border-left:0px;
-    }
-        .Projekte img{
-            overflow:visible;
-        }
-        .Kompetenzen {
-        width:99%;
-        overflow: hidden;
-        padding: 0px;
-        margin:0px;
-        border-right:0px;
-        border-left:0px;
-    }
-    .foot{
-        flex-direction:column;
-    }
-    .socials{
-        flex-direction: column;
-        gap:0px;
-        margin:0px;
-    }
+.we-playin-jazz{
+    font-size: 2vw;
 }
-@media (max-width:769px){
-    .container{
-        flex-direction:column;
-    }
-        .Introduction {
-        width:99%;
-        padding: 0px;
-        margin:0px;
-        border-right:0px;
-        border-left:0px;
-        overflow: hidden;
-    }
-        .Projekte {
-        width:99%;
-        padding: 0px;
-        margin:0px;
-        border-right:0px;
-        overflow: hidden;
-        border-left:0px;
-    }
-        .Projekte img{
-            overflow:visible;
-        }
-        .Logo:hover/* i know its normally a touchscreen but hover works when you click on it*/{
-        transform:scale(1.5);
-        transition: filter 0.1s, transform 0.1s;
-        }
-        .Kompetenzen {
-        width:99%;
-        overflow: hidden;
-        padding: 0px;
-        margin:0px;
-        border-right:0px;
-        border-left:0px;
-    }
+.Introduction p, .Kompetenzen p, .Projekte p, .Fotografie p{
+    font-size: 2vw;
 }
-@media (max-width: 1025px){
-    body{
-        font-size: larger;
-    }
-    .container{
-        flex-direction:column;
-    }
-    .Kompetenzen, .Projekte, .Introduction{
-        width:99%
-    }
-    .Fotografie img{
-        width: 25%;
-        margin-bottom:5%;
-    }
-        .Logo:hover/* i know its normally a touchscreen but hover works when you click on it*/{
-        transform:scale(1.5);
-        transition: filter 0.1s, transform 0.1s;
-        }
+.Introduction h2, .Kompetenzen h2{
+    font-size: 3vw;
 }
-@media (max-width: 1499px){
-    body{
-        font-size: large;
-    }
-    .Fotografie img{
-        width: 20%;
-    }
-        .Logo:hover/* i know its normally a touchscreen but hover works when you click on it*/{
-        transform:scale(1.5);
-        transition: filter
-        }}
-    .Kompetenzen p, .Projekte p, .Introduction p{
-        margin-left:10%;
-        margin-right:10%;
-    }
-@media (min-width: 1500px){
-    body{
-        font-size: x-large;
-    }
-    .Fotografie{
-        margin-top: 0vh;
-    }
-    .Fotografie img{
-        width:10%;
-
-    }
-        .Logo:hover/* i know its normally a touchscreen but hover works when you click on it*/{
-        transform:scale(1.5);
-        transition: filter 0.1s, transform 0.1s;
-        }
+.attr a{
+    font-size:1vw;
 }
-@media (prefers-color-scheme: light) {
-    .dm{
-        display:contents;
-    }
-    body{
-        background-color:#e6e5ff;
-        color:#0a0743;
-    }
-    .TextLink{
-        color:#2f2d6c;
-    }
-    .socials a:hover{
-        color:#100b74;
-    }
-    .nojs:hover {
-        color:#e6e5ff;
-    }
-    p a {
-        color:#2f2d6c;
-    }
-    .Projekte, .Kompetenzen, .Introduction{
-        background-color:#dbd9ff;
-        border:0px;
-        margin-bottom:0vh;
-    }
-    .Fotografie{
-        margin-top: 0vh;
-        background-color:#d2d0ff;
-        border:0px;
-    }
-    .intro{
-        color:#0a0743;
-    }
-    .intro:hover{
-        color:#02002f;
-    }
+.cat{
+    width:30vw
+}
 }

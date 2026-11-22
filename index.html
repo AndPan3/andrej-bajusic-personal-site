@@ -20,12 +20,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <script src="script.js" defer ></script>
         <div class="welcomediv">
             <h1>Andrej Bajusic</h1>
             <p class="welcome">Welcome to my site. Please Scroll!</p>
         </div>
         <h2 class="dm">This website looks best in dark mode!</h2>
-        <img class="cat" src="cat.gif" alt="A cat gif">
+        <div class="bothcats">
+            <img class="cat" src="img/cat.gif" alt="A cat gif">
+        <div class="jazz">
+            <img src="img/jazzy-cat.png" alt="blue cat with headphones">
+            <p class="mindjazz">Mind some Jazz?</p>
+            <button id="jazz-button" class="we-playin-jazz">Yes please!</button>
+            <p class="attr"><a href="music/license.html">Click here for attribution of the music!</a></p>
+        </div>
+        </div>
+        <div class="trio">
         <div class="container">
         <div class="Introduction">
             <h2>About Me</h2>
@@ -39,9 +49,44 @@
             <a href="https://github.com/AndPan3?tab=repositories&q=&type=&language=javascript&sort="><img class="Logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png?_=20120221235433" alt="JavaScript Logo"></a>
             <a href="https://github.com/AndPan3?tab=repositories&q=&type=&language=python&sort="><img class="Logo"src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/500px-Python-logo-notext.svg.png" alt="Python Logo"></a>
         </div>
+    </div>
         <div class="Projekte">
             <h2>Projects</h2>
-            <p>I have created several projects, including this website, a <a class="TextLink" href="https://github.com/AndPan3/random-song-hardmusic">random song generator</a> using JS and HTML, and a <a class="TextLink" href="https://github.com/AndPan3/countdown">countdown</a> to the holidays. I also have projects in python like <a class="TextLink" href="https://github.com/AndPan3/cartons">cartons</a>, a small pypi package that wraps OSRM and Folium.</p>
+            <p> I have multiple projects that you can view on my <a href="https://www.github.com/AndPan3/">GitHub</a>. Here are some of my fav projects.</p>
+            <h3>Moody Clock</h3>
+            <div class="clock">
+                    <p>
+                    This clock uses the current time as a hex color code for the background.
+                    For example, 12:34:56 becomes #123456.
+                    I made this <a class="TextLink" href="https://clock.andrejbajusic.ch">website</a>
+                    using HTML, CSS and JavaScript.
+                    The design is simple and minimal, and I like it because it looks nice.
+                    </p>
+                    <img src="img/hexclock.jpg" alt="A screenshot of clock.andrejbajusic.ch">
+                </div>
+                <h3>Cartons</h3>
+                <div class="cartons">
+                    <img src="img/cartons.jpg" alt="A screenshot of a map using cartons.">
+                    <p>
+                        Cartons is a small wrapper between Folium and OSRM that lets you generate routes and maps. Kinda like Google Maps!
+                        I really like it because you can create interesting maps and see the results visually, and because other people can actually use it.
+                        Of course, you can check it out on <a class="TextLink" href="https://github.com/AndPan3/cartons">GitHub</a>.
+                        It's also open-source under the <a class="TextLink" href="https://opensource.org/licenses/MIT">MIT License</a>. ^^
+                    </p>
+                </div>
+                <h3>Dienstleistungsbuben</h3>
+                <div class="db">
+                    <p>
+                        I started the Dienstleistungsbuben to help people in our local neighborhoods and to make some money.
+                        It's a small business where my friends and I offer services like IT support (that's me ;-)), gardening, and much, much more.
+                        You can check out our <a class="TextLink" href="https://dienstleistungsbuben.ch">website</a>.
+                        And of course... even your local neighborhood business is open-source!
+                        You can find the code on <a class="TextLink" href="https://github.com/AndPan3/Dienstleistungsbuben">GitHub</a>. ^^
+                    </p>
+                    <img src="img/db.jpg" alt="A screenshot of the Dienstleistungsbuben website showing the name and a house">
+
+                </div>
+            </div>
         </div>
         </div>
         <div class="Fotografie">
@@ -52,14 +97,14 @@
             <a href="https://unsplash.com/photos/a-single-yellow-flower-blooms-amidst-green-foliage-RIfIAluqcKQ"><img src="https://images.unsplash.com/photo-1762282680309-548a36066eb2?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A yellow flower with a background of green leaves"></a>
         </div>
         <div class="foot">
-            <p class="nojs">-Made with love (and no JavaScript)-</p>
+            <p class="nojs">-Made with love-</p>
             <div class="socials">
                 <p><a href="https://www.tiktok.com/@and_pan3">TikTok</a></p>
                 <p><a href="https://www.instagram.com/and_pan3/">Instagram</a></p>
                 <p><a href="https://github.com/AndPan3">GitHub</a></p>
                 <p><a href="https://stackoverflow.com/users/32534853/andrej-bajusic">Stack Overflow</a></p>
                 <p><a href="contact.html">Contact me</a></p>
-                <p><a href="/clock/clock.html">Clock</a></p>
+                <p><a href="https://www.clock.andrejbajusic.ch">Clock</a></p>
             </div>
         </div>
             <script data-goatcounter="https://andpan3.goatcounter.com/count"
